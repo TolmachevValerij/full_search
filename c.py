@@ -20,8 +20,8 @@ if not response:
     pass
 
 json_response = response.json()
-toponym = json_response['response']['GetObjectCollection'][
-        'featureMember'][0]['GetObject']
+toponym = json_response['response']['GeoObjectCollection'][
+        'featureMember'][0]['GeoObject']
 
 tc = toponym['Point']['pos']
 tl, la = tc.split(' ')
